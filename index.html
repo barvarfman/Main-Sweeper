@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,15 @@
 </head>
 
 <body onload="initGame()">
-<h1>Mine Sweeper</h1>
-    <div class="container"></div>
- <script src="js/game.js" ></script>   
+    <h1>Mine Sweeper</h1>
+    <button data="1" class="level1" onclick="level(this)">level 1</button>
+    <button data="2" class="level2" onclick="level(this)">level 2</button>
+    <button data="3" class="level3" onclick="level(this)">level 3</button>
+     
+    <div class="gameover"></div>
+   <div class="stopwatch"></div>
+     <div class="container"></div>
+    <script src="js/game.js"></script>
 </body>
+
 </html>

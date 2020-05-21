@@ -7,11 +7,11 @@ body {
     width: 60px;
     height: 60px;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 30px;
     background-color: aqua;
     border: solid 2px black;
     color: black;
-    box-shadow: 5px 5px 2px -1px rgb(47, 186, 221);
+    box-shadow: 5px 5px 2px -1px rgb(10, 10, 10);
 
   }
 
@@ -27,6 +27,25 @@ body {
 
    }
    
-   :hover .cell{
+  :hover.cell {
      cursor: pointer;
+     background-color: blanchedalmond;
    }
+
+  .gameover{
+    text-align: center;
+    font-style: italic;
+    font-size: 25px;
+    background-color: brown;
+     height: 100px;
+     width: 200px;
+  }
+
+  .stopwatch{
+       margin-top: 20px;
+       height: 60px;
+       width: 200px;
+       background-color: burlywood;
+       text-align: center;
+
+  }
