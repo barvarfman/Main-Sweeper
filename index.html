@@ -9,14 +9,29 @@
 </head>
 
 <body onload="initGame()">
-    <h1>Mine Sweeper</h1>
-    <button data="1" class="level1" onclick="level(this)">level 1</button>
-    <button data="2" class="level2" onclick="level(this)">level 2</button>
-    <button data="3" class="level3" onclick="level(this)">level 3</button>
-     
-    <div class="gameover"></div>
-   <div class="stopwatch"></div>
-     <div class="container"></div>
+    <div class="h1AndButtons">
+        <h1><span style="color: deepskyblue;" class="s1">M</span><span style="color: blue;" class="s2">i</span><span
+                style="color: blueviolet;" class="s3">n</span><span style="color: chartreuse;" class="s4">e</span>
+            <span style="color: crimson;" class="s5">S</span><span style="color: darkcyan;" class="s6">w</span><span
+                style="color: coral;" class="s7">e</span><span style="color: deepskyblue;" class="s8">e</span><span
+                style="color: deeppink;" class="s9">p</span><span style="color: limegreen;" class="s10">e</span><span
+                style="color: blue;" class="s11">r</span>
+        </h1>
+        <button class="hints" onclick="hints()">Hints</button>
+        <button class="stopwatch">0</button>
+        <div class="buttons">
+            <button data="1" class="level" onclick="level(this)">Easy</button>
+            <button data="2" class="level" onclick="level(this)">Medium</button>
+            <button data="3" class="level" onclick="level(this)">Hard</button>
+            <button class="safeClick" onclick="safeClick(this)">SAFE CLICK</button>
+            <div class="safeClickCuonter">3</div>
+        </div>
+    </div>
+    <div class="livesAndSmily">
+        <div class="lives">❤️❤️❤️</div>
+        <div class="smily">😀</div>
+    </div>
+    <div class="container"></div>
     <script src="js/game.js"></script>
 </body>
 

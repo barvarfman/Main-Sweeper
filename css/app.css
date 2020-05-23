@@ -1,28 +1,33 @@
+
 body {
-    background-color:blue;
-    color:white;
-  }
+    background-image: url(../img/walll.jpg);
+    color: white;
+    text-align: center;
+    margin: 0;
+
+}
   
   .cell{
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     text-align: center;
     font-size: 30px;
-    background-color: aqua;
-    border: solid 2px black;
-    color: black;
-    box-shadow: 5px 5px 2px -1px rgb(10, 10, 10);
-
+    background-color: lightgrey;
+    color: cadetblue;
+    border: 3px ridge rgb(241, 239, 239);
+    transition: 1s ease;
+    border-radius: 7%;
   }
 
   table {
-    margin-left: 600px;
-    margin-top: 200px;
-     
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-spacing: unset;
+    margin-bottom: 30px;
    }
    h1{
-        font-size: 40px;
-        margin-left: 600px;
+        font-size: 50px;
         font-style: italic;
 
    }
@@ -31,21 +36,60 @@ body {
      cursor: pointer;
      background-color: blanchedalmond;
    }
-
-  .gameover{
-    text-align: center;
-    font-style: italic;
-    font-size: 25px;
-    background-color: brown;
-     height: 100px;
-     width: 200px;
+   
+   :hover.safeClick {
+    cursor: pointer;
+    background-color:red;
+  }
+  
+  :hover.level{
+    cursor: pointer;
+    background-color: blanchedalmond;
   }
 
   .stopwatch{
-       margin-top: 20px;
-       height: 60px;
-       width: 200px;
-       background-color: burlywood;
-       text-align: center;
+    background-color: black;
+    margin-bottom: 4px;   
+    text-align: center;
+    width: 45px;
+    color: red;
+    font: bolder;
+  }
+
+  .lives{
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .smily{
+    text-align: center;
+    font-size: 30px;
+   
+  }
+
+  .level{
+    border-radius: 15%;
+  }
+
+  .safeClick{
+    background-color: lightgreen;
+    border-radius: 10%;
+    border: lightseagreen 2px, solid;
+  }
+  
+  .safeClickCuonter{
+    display: inline;
+    color: white;
+    font: bold;
+    font-size: 20px;
+  }
+
+  .hints{
+    background-color: black;
+    margin-bottom: 4px;   
+    text-align: center;
+    width: 45px;
+    color: red;
+    font: bolder;
 
   }
