@@ -150,7 +150,7 @@ function cellClicked(elCell, event) {
     window.oncontextmenu = (e) => {
         e.preventDefault();
     }
-
+    var elHintsCount=document.querySelector('.hintCuont');
     var cell;
     var cellCoord = getCellCoord(elCell.id)
 
@@ -163,12 +163,11 @@ function cellClicked(elCell, event) {
             gFirstClick++;
         }
         
-        if ((gHints)) {
+        if ((gHints)&&gHintsCount>0) {
             showArund(cellCoord);
-           if(gHintsCount===1){
             gHints=false;
-           }
-           gHintsCount--;
+            gHintsCount--;
+           elHintsCount.innerText=gHintsCount;
            return;
             
         }

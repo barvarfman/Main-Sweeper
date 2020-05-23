@@ -93,3 +93,9 @@ body {
     font: bolder;
 
   }
+
+  .hintCuont{
+    display: inline;
+    font-size: 20px;
+    font: bolder;
+  }
